@@ -1,5 +1,7 @@
 package org.example.variables_lesson2.homework;
 
+import java.util.Random;
+
 public class SecondTask {
     /*
     Теперь представим, что Макгонагалл выставляет оценки за работу с помощью
@@ -25,4 +27,15 @@ public class SecondTask {
 
     Запустите приложение несколько раз, посмотрите, как изменяются данные в консоли.
     */
+
+    public static void main(String[] args) {
+        int grade1 = new Random().nextInt(1, 10);
+        int grade2 = new Random().nextInt(1, 10);
+        System.out.println(grade1);
+        System.out.println(grade2);
+
+        boolean result = grade1 > 5 && grade2 > 5;
+        System.out.println(result);
+
+    }
 }
